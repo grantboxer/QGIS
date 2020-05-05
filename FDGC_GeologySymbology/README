@@ -1,0 +1,31 @@
+The Federal Geographic Data Committee (FGDC) published a cartographic
+standard for geological map symbolization. This comprehensive document
+provides the specifications for a great many symbols used on
+geological maps. The document, and associated illustrations and files
+can be downloaded from http://pubs.usgs.gov/tm/2006/11A02
+
+This document was used to design and define symbols for use by
+QGIS. In order to adhere as closely as possible to the specifications
+set out in the FGDC document, it was necessary to design a substantial
+number of svg symbols and combine these in QGIS to arrive at the
+required symbols. Accordingly, a svn folder with a geology subfolder
+had to be created to contain all the individual svg files.  It is
+necessary to inform QGIS of the location of this folder (this can be
+done via the Settings;Options;System;SVG Paths). The combinations of
+these svg entities into the actual symbols has been detailed in a
+number of .xml files: these can be imported into QGIS via the Style
+Manager, using the Share and Import options.
+
+The set of symbols uses some the FGDCGeoAge fonts: the font files can be
+obtained from the website http://pubs.usgs.gov/tm/2006/11A02
+
+In addition to the FGDC-compliant symbols, there are also 3 additional
+.qml files, implementing the colour scheme proposed by the Commission
+for the Geological Map of the World (CGMW). The 3 files contain the
+colour scheme, and names of respectively the chronostratigraphic
+systems, series and stages.
+
+
+
+Stefan Revets
+20 April 2015
